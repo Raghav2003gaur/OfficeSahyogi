@@ -27,8 +27,7 @@ interface UserPageProps {
     username: string;
   };
 }
-
-const SingleUserPage: FC<UserPageProps> = ({ params }) => {
+const SingleUserPage = ({ params }: UserPageProps) => {
   const { username } = params;
 
   return (

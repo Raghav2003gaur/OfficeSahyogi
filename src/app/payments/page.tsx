@@ -266,7 +266,7 @@ const PaymentsPage = async () => {
       <div className="mb-8 px-4 py-2 bg-secondary rounded-md">
         <h1 className="font-semibold">All Payments</h1>
       </div>
-      <div className="px-8 ">
+      <div className="mb-56 ">
         <AppPieChart/>
       </div>
       <DataTable columns={columns} data={data}/>

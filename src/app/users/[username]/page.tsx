@@ -17,19 +17,11 @@ import { Progress } from "@/components/ui/progress";
 import { BadgeCheck, Candy, Citrus, Shield } from "lucide-react";
 import { Sheet, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import EditUser from "@/components/EditUser";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import AppLineChart from "@/components/AppLineChart";
-import EditUser from "@/components/EditUser";
-import { FC } from "react";
 
-interface UserPageProps {
-  params: {
-    username: string;
-  };
-}
-const SingleUserPage = ({ params }: UserPageProps) => {
-  const { username } = params;
-
+const SingleUserPage = () => {
   return (
     <div className="">
       <Breadcrumb>
@@ -134,11 +126,11 @@ const SingleUserPage = ({ params }: UserPageProps) => {
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold">Username:</span>
-                <span>Raghav27gaur</span>
+                <span>john.doe</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold">Email:</span>
-                <span>xyz.doe@gmail.com</span>
+                <span>john.doe@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold">Phone:</span>
@@ -146,7 +138,7 @@ const SingleUserPage = ({ params }: UserPageProps) => {
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold">Location:</span>
-                <span>Delhi, India</span>
+                <span>New York, NY</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-bold">Role:</span>
@@ -171,10 +163,13 @@ const SingleUserPage = ({ params }: UserPageProps) => {
                 <AvatarImage src="https://avatars.githubusercontent.com/u/1486366" />
                 <AvatarFallback>JD</AvatarFallback>
               </Avatar>
-              <h1 className="text-xl font-semibold">Raghav Gaur</h1>
+              <h1 className="text-xl font-semibold">John Doe</h1>
             </div>
             <p className="text-sm text-muted-foreground">
-            Raghav Gaur has completed over 150 successful transactions in the past month, with a focus on high-value purchases and consistent payment history.Also he was very active in feburary and march.But after that there was a drop in his activity.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+              voluptas distinctio ab ipsa commodi fugiat labore quos veritatis
+              cum corrupti sed repudiandae ipsum, harum recusandae ratione ipsam
+              in, quis quia.
             </p>
           </div>
           {/* CHART CONTAINER */}

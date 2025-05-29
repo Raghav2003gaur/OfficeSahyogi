@@ -20,8 +20,11 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import AppLineChart from "@/components/AppLineChart";
 import EditUser from "@/components/EditUser";
+interface SingleUserPageProps {
+  username: string;
+}
 
-const SingleUserPage = () => {
+const SingleUserPage = ({ username }: SingleUserPageProps) => {
   return (
     <div className="">
       <Breadcrumb>

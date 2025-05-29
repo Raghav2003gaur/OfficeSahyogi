@@ -1,8 +1,14 @@
 import React from 'react'
+import SingleUserPage from "./[username]/page";
+interface UserPageProps {
+  params: {
+    username: string;
+  };
+}
 
-const UsersPage = () => {
+const UsersPage = ({ params }: UserPageProps) => {
   return (
-    <div>UsersPage</div>
+    <div> <SingleUserPage username={params.username} /></div>
   )
 }
 

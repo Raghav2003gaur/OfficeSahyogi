@@ -60,7 +60,10 @@ const Navbar = () => {
   <DropdownMenuContent sideOffset={10}>
     <DropdownMenuLabel>My Account</DropdownMenuLabel>
     <DropdownMenuSeparator />
-    <DropdownMenuItem><User className='h-[1.2rem] w-[1.2rem] mr-2' onSelect={() => router.push("/users/raghav")}/>Profile</DropdownMenuItem>
+    <DropdownMenuItem>
+      <Link href="/users/raghav"className="flex items-center gap-2"> <User className='h-[1.2rem] w-[1.2rem] mr-2'/>Profile
+      </Link>
+      </DropdownMenuItem>
     <DropdownMenuItem><Banknote className='h-[1.2rem] w-[1.2rem] mr-2'/> Billing</DropdownMenuItem>
     <DropdownMenuItem><ReceiptIndianRupeeIcon className='h-[1.2rem] w-[1.2rem] mr-2'/> Payments</DropdownMenuItem>
     <DropdownMenuItem><Settings className='h-[1.2rem] w-[1.2rem] mr-2'/> Settings</DropdownMenuItem>

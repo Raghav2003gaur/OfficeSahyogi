@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import AppSidebar from "@/components/ui/AppSidebar";
+import AppSidebar from "@/components/AppSidebar";
 import Navbar from "@/components/ui/Navbar";
 import { ThemeProvider } from "@/components/ui/providers/ThemeProvider";
 import { SidebarProvider } from "@/components/ui/sidebar";

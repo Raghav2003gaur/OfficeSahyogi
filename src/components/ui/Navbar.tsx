@@ -3,6 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Moon, User ,ReceiptIndianRupeeIcon,Banknote,Settings,LogOut, Sun, Sidebar} from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
+import { useRouter } from "next/navigation";
+
 
 import {
   DropdownMenu,
@@ -17,6 +19,7 @@ import { useTheme } from 'next-themes'
 import { SidebarTrigger } from './sidebar'
 
 const Navbar = () => {
+  const router = useRouter();
   const { theme, setTheme } = useTheme()
   return (
     <nav className='p-4 flex items-center justify-between'>
@@ -57,7 +60,7 @@ const Navbar = () => {
   <DropdownMenuContent sideOffset={10}>
     <DropdownMenuLabel>My Account</DropdownMenuLabel>
     <DropdownMenuSeparator />
-    <DropdownMenuItem><User className='h-[1.2rem] w-[1.2rem] mr-2'/>Profile</DropdownMenuItem>
+    <DropdownMenuItem><User className='h-[1.2rem] w-[1.2rem] mr-2' onSelect={() => router.push("/users/raghav")}/>Profile</DropdownMenuItem>
     <DropdownMenuItem><Banknote className='h-[1.2rem] w-[1.2rem] mr-2'/> Billing</DropdownMenuItem>
     <DropdownMenuItem><ReceiptIndianRupeeIcon className='h-[1.2rem] w-[1.2rem] mr-2'/> Payments</DropdownMenuItem>
     <DropdownMenuItem><Settings className='h-[1.2rem] w-[1.2rem] mr-2'/> Settings</DropdownMenuItem>

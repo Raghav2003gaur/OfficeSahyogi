@@ -82,7 +82,7 @@ export function AppSidebar() {
                     </SidebarMenuSubItem>
                     <SidebarMenuSubItem>
                       <SidebarMenuSubButton asChild>
-                        <Link href="/receivables">
+                        <Link href="/recievables">
                           <Receipt className="mr-2 h-4 w-4" />
                           <span>Receivables</span>
                         </Link>
